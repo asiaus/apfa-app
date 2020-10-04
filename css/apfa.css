@@ -1,0 +1,89 @@
+div.flow-container-outer {
+    font-family: verdana;
+    font-size: 10.5px;
+    position: sticky;
+    position: -webkit-sticky;
+    height:200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    overflow:scroll; 
+    white-space:nowrap;
+    z-index: 1;
+}
+
+div.process-box {
+    box-sizing: content-box;
+    position: absolute; 
+    text-align: center;
+    white-space: normal;
+}
+
+div.process-box:hover {
+	border: 2px solid blue;
+    color: blue;
+    }
+
+div.vl {
+    position: absolute;
+    border-width: 0px 2px 0px 0px;
+    box-sizing: content-box;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    color: grey;
+    text-align: center;
+    white-space: normal;
+}
+
+div.hl {
+    position: absolute; 
+    border-width: 2px 0px 0px 0px;
+    box-sizing: content-box;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    color: grey;
+    text-align: center;
+    white-space: normal;
+}
+
+div.uar {
+    position: absolute; 
+	width: 0;
+    height: 0;
+    box-sizing: content-box;
+	border-right: 4px solid transparent;
+	border-bottom: 7px solid rgb(112, 112, 112);
+	border-left: 4px solid transparent;
+    transform: translate(-3px,1px);
+}
+div.rar {
+    position: absolute; 
+	width: 0;
+    height: 0;
+    box-sizing: content-box;
+	border-top: 4px solid transparent;
+	border-left: 7px solid rgb(112, 112, 112);
+	border-bottom: 4px solid transparent;
+    transform: translate(-6px,-3px);
+}
+div.dar {
+    position: absolute; 
+	width: 0;
+    height: 0;
+    box-sizing: content-box;
+	border-right: 4px solid transparent;
+	border-top: 7px solid rgb(112, 112, 112);
+	border-left: 4px solid transparent;
+    transform: translate(-3px,-6px);
+}
+div.lar {
+    position: absolute; 
+	width: 0;
+    height: 0;
+    box-sizing: content-box;
+	border-top: 4px solid transparent;
+	border-right: 7px solid rgb(112, 112, 112);
+	border-bottom: 4px solid transparent;
+    transform: translate(1px,-3px);
+}
