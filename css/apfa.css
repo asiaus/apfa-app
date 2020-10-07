@@ -25,6 +25,22 @@ div.process-box:hover {
     color: blue;
     }
 
+p.process-node-text {
+    margin: 0px;
+    border: 0;
+    color: black;
+    background-color: rgba(255,255,255,0.85);
+    padding: 0;
+    width: calc(100%-4px);
+    left:2px;
+    right:2px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    }
+
 div.vl {
     position: absolute;
     border-width: 0px 2px 0px 0px;

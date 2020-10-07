@@ -1,0 +1,16 @@
+svg.button { fill: blue; background-color: rgba(0,0,0,0); }
+svg.button:hover { fill: rgba(0,0,0,40); background-image: radial-gradient(circle, grey 10%, white, white); }
+
+.svg-button { position: relative; display: inline-block; } 
+.svg-button .suggestion-box 
+{
+    visibility: hidden;
+    border: 1px solid black; border-radius: 5px; background: rgba(0,0,0,0.6); 
+    color: white;
+    position: absolute; left: 20px; top: -20px; width: 300%; padding: 2px;
+    z-index:1;
+}
+
+.svg-button:hover .suggestion-box {visibility: visible; }
+
+td .svg-button { top: 6px; }
