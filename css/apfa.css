@@ -103,3 +103,78 @@ div.lar {
 	border-bottom: 4px solid transparent;
     transform: translate(1px,-3px);
 }
+
+/* UC-12: the node selected in the diagram or the table, highlighted in both. */
+div.process-box {
+    cursor: pointer;
+}
+div.process-box.apfa-selected {
+    outline: 3px solid #f08c00;
+    outline-offset: 2px;
+    box-shadow: 0 0 8px rgba(240, 140, 0, 0.6);
+    z-index: 3;
+}
+#table-activities tr.apfa-selected td:not(:first-child) {
+    background-color: #fff1d6;
+}
+#table-activities tr.apfa-selected td:nth-child(2) {
+    box-shadow: inset 4px 0 0 #f08c00;
+}
+
+/* UC-07: gateway condition (JSON rule). */
+table input[type=text].condition-expr {
+    width: 260px;
+    font-family: Consolas, monospace;
+}
+
+/* UC-13: validation banner above the chart. */
+div.validation-banner {
+    margin: 6px 0 0 0;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    max-height: 120px;
+    overflow-y: auto;
+    background: white;
+}
+div.validation-banner.ok {
+    border: 1px solid #2f9e44;
+    color: #1b5e20;
+    background: #ebfbee;
+}
+div.validation-banner.warn {
+    border: 1px solid #e67700;
+    color: #7a3e00;
+    background: #fff4e6;
+}
+div.validation-banner ul {
+    margin: 4px 0 0 0;
+    padding-left: 18px;
+}
+div.validation-banner li.clickable {
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+span.dirty-flag {
+    margin-left: 8px;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    color: #a34700;
+}
+span.dirty-flag, button.problem-count {
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: #fff4e6;
+    border: 1px solid #e67700;
+}
+button.problem-count {
+    margin-left: 6px;
+    font-size: 12px;
+    color: #7a3e00;
+    cursor: pointer;
+}
+table input[type=text].condition-expr::placeholder {
+    color: #b0b0b0;
+    font-style: italic;
+}

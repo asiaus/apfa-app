@@ -1,9 +1,5 @@
 # apfa-app
 Process Flow Automation Framework based on microservice architecture concepts utilizing MVC+P pattern
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ed2671541b184b5ed638a44366e454aede9caf95
 
 ## What is APFA framework:
 Asiaus Process Flow Automation framerok. The prodject is divided into 3 sub-projects:
